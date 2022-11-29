@@ -1,0 +1,20 @@
+.crveni-tekst {
+    color: red;
+    background-color: blue;
+}
+
+h1 {color: green;}
+
+#plavi-tekst { color: blue;
+background-color: gold;}
+
+
+h2:hover {font-size: 50px;
+color: blue;}
+
+li:hover {background-color: gold;
+;}
+
+a:visited {color: magenta;}
+
+a:active {color: chartreuse;}
