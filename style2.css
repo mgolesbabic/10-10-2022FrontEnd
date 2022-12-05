@@ -1,0 +1,137 @@
+h1 {
+  font-size: xx-large;
+  color: red;
+}
+
+.main-div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.main-div > div {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: green;
+  border: 2px solid red;
+}
+
+:nth-child(3){
+  order: 1;
+}
+
+.sub-div {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  /* nekoliko animacija */
+  -webkit-animation-name: fadein-top, fadein-right, fadein-bottom, fadein-left, fadein-text;
+          animation-name: fadein-top, fadein-right, fadein-bottom, fadein-left, fadein-text;
+  -webkit-animation-duration: 1s, 1s, 1s, 1s, 2s;
+          animation-duration: 1s, 1s, 1s, 1s, 2s;
+  -webkit-animation-delay: 0s, 1s, 2s, 3s, 4s;
+          animation-delay: 0s, 1s, 2s, 3s, 4s;
+  -webkit-animation-iteration-count: 1, 1, 1, 1, infinite;
+          animation-iteration-count: 1, 1, 1, 1, infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein-top {
+  from {
+    border-top-color: white;
+  }
+  to {
+    border-top-color: black;
+  }
+}
+
+@keyframes fadein-top {
+  from {
+    border-top-color: white;
+  }
+  to {
+    border-top-color: black;
+  }
+}
+@-webkit-keyframes fadein-right {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: black;
+  }
+}
+@keyframes fadein-right {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: black;
+  }
+}
+@-webkit-keyframes fadein-bottom {
+  from {
+    border-bottom-color: white;
+  }
+  to {
+    border-bottom-color: black;
+  }
+}
+@keyframes fadein-bottom {
+  from {
+    border-bottom-color: white;
+  }
+  to {
+    border-bottom-color: black;
+  }
+}
+@-webkit-keyframes fadein-left {
+  from {
+    border-left-color: white;
+  }
+  to {
+    border-left-color: black;
+  }
+}
+@keyframes fadein-left {
+  from {
+    border-left-color: white;
+  }
+  to {
+    border-left-color: black;
+  }
+}
+@-webkit-keyframes fadein-text {
+  0% {
+    color: white;
+  }
+  30%, 60% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes fadein-text {
+  0% {
+    color: white;
+  }
+  30%, 60% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}/*# sourceMappingURL=style2.css.map */
